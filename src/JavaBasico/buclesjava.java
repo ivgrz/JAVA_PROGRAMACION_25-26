@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class buclesjava {
     public static void main(String[] args) {
         int contador = 0;
-        while
+
 
         Scanner teclado = new Scanner(System.in);
         int opcion = 0;
@@ -18,18 +18,38 @@ public class buclesjava {
             String op = teclado.nextLine();
             opcion = Integer.parseInt(op);
 
-
-            if (opcion == 1){
-                System.out.println("Hola");
-            } else if (opcion == 2) {
-                System.out.println("Adios");
-                
-            } else if (opcion == 3) {
-                System.out.println("Hasta luego");
-                
+            switch (opcion) {
+                case 1:
+                    System.out.println("ola");
+                    break;
+                case 2:
+                    System.out.println("Adios");
+                    break;
+            } //fin del switch
+            //Bucle definido for:
+            // for(inicializacion; expresion; incremento){}
+            for (int i = 0; i < 20; i += 3) {
+                System.out.println("Indice: " + i);
             }
+            // Bucle FOR infinito
+            /*
+            NO FUNCIONA
+            int i = 5;
+            for (;;) {
+                System.out.println("indice: " +i);
+                i+=3;
+                if (i < 19)break;
+                }
+
+             */
+            for (int i = 5; i < 10; i += 3) {
+                System.out.println("Indice: " + i);
+            }
+            }
+
+
+
         }
 
 
     }
-}
