@@ -4,7 +4,20 @@ import java.util.Scanner;
 
 public class buclesjava {
     public static void main(String[] args) {
+        // Bucle while normal
         int contador = 0;
+        while (contador <= 5) {
+            System.out.println("Bucle while " + contador);
+            contador++;
+        }
+        //bucle do-while
+        contador = 0;
+        do {
+            System.out.println(
+                    "Bucle do-while " + contador
+            );
+            contador++;
+        } while (contador <= 5);
 
 
         Scanner teclado = new Scanner(System.in);
@@ -45,11 +58,10 @@ public class buclesjava {
             for (int i = 5; i < 10; i += 3) {
                 System.out.println("Indice: " + i);
             }
-            }
-
-
-
         }
 
 
     }
+
+
+}
