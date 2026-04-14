@@ -26,7 +26,7 @@ public class Persona {
 
     public Persona(String nombre, String dni, int edad){
         // En JAVA no se necesita "this" necesariamente
-        // Hacerlo asi tambien funciona -->
+        // Hacerlo asi también funciona -->
         /*
         nombre = n;
         dni = d;
@@ -41,7 +41,15 @@ public class Persona {
 
 
 
+
     }
+    /*
+    * Encapsulamiento
+    * Declaracion de getters y setters
+    * */
 
-
+    public void setNombre(String Nombre){
+        this.nombre = Nombre;
+    }
 }
+
