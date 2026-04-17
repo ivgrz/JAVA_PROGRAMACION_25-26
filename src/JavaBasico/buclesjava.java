@@ -1,5 +1,7 @@
 package JavaBasico;
 
+import POO.Persona;
+
 import java.util.Scanner;
 
 public class buclesjava {
@@ -58,6 +60,22 @@ public class buclesjava {
             for (int i = 5; i < 10; i += 3) {
                 System.out.println("Indice: " + i);
             }
+            // otra manera
+            int[] numeros = new int[0];
+            for (int n: numeros){
+                System.out.println("El numero es" + numeros[n]);
+
+            }
+            // Uso de arrays
+            String [] nombres;
+            nombres = new String [10];
+            nombres[0] = "Hugo";
+            nombres [1] = "Pedro";
+            nombres [2] = new String("Ana");
+
+            Persona [] equipo;
+            equipo = new Persona[5];
+            equipo[0] = new Persona();
         }
 
 

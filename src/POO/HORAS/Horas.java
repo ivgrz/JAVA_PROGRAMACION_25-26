@@ -50,4 +50,6 @@ public class Horas {
         return "Hora: " + horas + ", minutos: "+ minutos + ", segundos: " + segundos;
     }
 
+
 }
+
