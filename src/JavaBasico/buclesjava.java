@@ -66,20 +66,11 @@ public class buclesjava {
                 System.out.println("El numero es" + numeros[n]);
 
             }
-            // Uso de arrays
-            String [] nombres;
-            nombres = new String [10];
-            nombres[0] = "Hugo";
-            nombres [1] = "Pedro";
-            nombres [2] = new String("Ana");
-
-            Persona [] equipo;
-            equipo = new Persona[5];
-            equipo[0] = new Persona();
+            }
         }
 
 
     }
 
 
-}
+
