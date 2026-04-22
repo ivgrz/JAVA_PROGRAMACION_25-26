@@ -1,13 +1,14 @@
 package HundirLaFlota;
 
 public class Barco {
-    String nombre;
-    int vida;
-
+    private String nombre;
+    private int vida;
+    private int vidainicial;
 
     public Barco(String nombre, int vida){
         this.nombre = nombre;
         this.vida = vida;
+        this.vidainicial = vida;
 
 
 
@@ -36,12 +37,19 @@ public class Barco {
         vida -= 1;
         return vida;
     }
-    public String Recibir_Disparo(){
+    public double Recibir_Disparo(){
         restar_vida();
-        if (vida > 0){
-            return "TOCADO";
-        }else{
-            return "HUNDIDO";
+        if (vida == 0){
+            System.out.println(nombre + "¡HUNDIDO!");
+            return 1.5;
+        } else if (vida == vidainicial/2) {
+            System.out.println(nombre + " a la mitad de vida!");
+            return 1;
+
+        }else
+        {
+            System.out.println("Disparo efectivo a " + nombre);
+            return 1;
         }
 
     }
