@@ -21,13 +21,13 @@ public class Juego {
         tablero.colocar_barco(1,3,b4);
 
     }
-    public void mostrar_resultado(int resultado){
+    public void mostrar_resultado(double resultado){
         if (resultado == 0){
             System.out.println("Agua");
-        } else if (resultado == 1) {
+        } else if (resultado == 1.0) {
             System.out.println("Tocado");
 
-        } else if (resultado == 3) {
+        } else if (resultado == 1.5) {
             System.out.println("Hundido");
 
         }
@@ -38,7 +38,7 @@ public class Juego {
     }
     public void disparo(int x, int y){
         System.out.println("Disparando en " + " " + "( " + x + " , " + y + " )");
-        int res = tablero.comprobar_impacto(x, y);
+        double res = tablero.comprobar_impacto(x, y);
         mostrar_resultado(res);
         tablero.mostrar();
     }

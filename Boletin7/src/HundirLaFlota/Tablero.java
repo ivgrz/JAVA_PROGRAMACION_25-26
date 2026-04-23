@@ -28,10 +28,11 @@ public class Tablero {
         }
 
     }
-    public int comprobar_impacto(int x, int y){
+    public double comprobar_impacto(int x, int y){
         if (x < 0 || x >= 4 || y < 0 || y >= 4){
             System.out.println("Fuera del tablero");
             return 0;
+
 
         }
         Barco barco = this.tablero[x][y];
@@ -41,14 +42,14 @@ public class Tablero {
             return 0;
             
         } else {
-            return barco.Recibir_Disparo();
-            System.out.println("Impacto al barco " +" " + barco.getNombre() + " en las coordenadas" + " " + x + " , " + y);
+            if (barco.esta_hundido()){
+                System.out.println("El barco ya esta hundido");
+                return 0;
 
-            if (resultado.equals("TOCADO")){
-                return 1;
-            }else {
-                return 3;
             }
+            Double puntos = barco.Recibir_Disparo();
+            System.out.println("Impacto al barco " +" " + barco.getNombre() + " en las coordenadas" + " " + x + " , " + y);
+            return puntos;
             
         }
 
@@ -60,15 +61,23 @@ public class Tablero {
             for (int j = 0; j < tamano; j++){
                 Barco b = this.tablero[i][j];
 
-                if(b == null){
+                if(b == null) {
                     System.out.print("- ");
 
-                }else{
-                    System.out.print("B ");
                 }
+                else if (b.esta_hundido()) {
+                    System.out.print("X ");
+
+                } else if (b.esta_tocado()) {
+                System.out.print("T ");
+            }
+            else {
+                    System.out.print(b.getNombre().charAt(0) + " ");
+                }
+
             }
             System.out.println();
-        }
+            }
 
     }
 

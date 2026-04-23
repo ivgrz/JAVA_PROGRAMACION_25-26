@@ -53,6 +53,12 @@ public class Barco {
         }
 
     }
+    public boolean esta_hundido(){
+        return vida <= 0;
+    }
+    public boolean esta_tocado(){
+        return vida < vidainicial && vida > 0;
+    }
     public String toString(){
         return (nombre + " " + vida);
     }
