@@ -62,7 +62,7 @@ public class Tablero {
                 Barco b = this.tablero[i][j];
 
                 if(b == null) {
-                    System.out.print("- ");
+                    System.out.print("~ ");
 
                 }
                 else if (b.esta_hundido()) {
