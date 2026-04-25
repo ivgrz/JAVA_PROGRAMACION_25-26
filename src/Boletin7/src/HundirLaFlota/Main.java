@@ -1,4 +1,4 @@
-package HundirLaFlota;
+package Boletin7.src.HundirLaFlota;
 
 public class Main {
     public static void main(String[] args) {

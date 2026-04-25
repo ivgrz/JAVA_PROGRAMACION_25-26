@@ -1,4 +1,4 @@
-package HundirLaFlota;
+package Boletin7.src.HundirLaFlota;
 
 public class Barco {
     private String nombre;

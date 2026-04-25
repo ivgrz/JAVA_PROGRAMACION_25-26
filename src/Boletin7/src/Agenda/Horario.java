@@ -1,4 +1,4 @@
-package Agenda;
+package Boletin7.src.Agenda;
 
 public class Horario {
     private String[][] agenda;
@@ -16,17 +16,17 @@ public class Horario {
 
     }
     public void mostrar(){
-        System.out.print("Hora | ");
+        System.out.printf("%-10s" , "Hora | ");
         for (String dia: dias){
-            System.out.println(dia + "\t");
+            System.out.printf("%-12s",dia + "\t");
 
         }
         System.out.println();
-        System.out.println("--------------------------------------------------");
+        System.out.println("------------------------------------------------------------------------------");
         for (int j = 0; j < horas.length; j++ ){
-            System.out.print(horas[j] + " | ");
+            System.out.printf("%-10s",horas[j] + " | ");
             for (int i = 0; i < dias.length; i++){
-                System.out.print(agenda[i][j] + "\t");
+                System.out.printf("%-12s",agenda[i][j] + "\t");
             }
             System.out.println();
         }
