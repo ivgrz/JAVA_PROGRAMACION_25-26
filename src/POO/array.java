@@ -1,6 +1,6 @@
 package POO;
-
-public class Arrays {
+import java.util.Arrays;
+public class array {
     public static void main(String[] args) {
 
         // Uso de arrays
@@ -41,5 +41,10 @@ public class Arrays {
         System.out.println("La media de edades es: " + sumaedad/ equipo.length);
         System.out.println("La cantidad de letras totales son " + numero_letras_total);
         System.out.println("El DNI menor es: " + dniMenor);
+
+        int[] edad = {25,27,28,22,24,29};
+        Arrays.sort(edad);
+        System.out.println(Arrays.toString(edad));
+
     }
 }
