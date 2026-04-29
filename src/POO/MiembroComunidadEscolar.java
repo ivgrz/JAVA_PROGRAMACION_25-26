@@ -1,8 +1,15 @@
 package POO;
 
 public class MiembroComunidadEscolar extends Persona{
-        private int codigocentro;
+    private int codigocentro;
+    private String nombrecentro;
 
+    // En herencia las propiedades de la clase padre también deben estar definidas en el constructor
+    public MiembroComunidadEscolar(String nombre, String dni, int edad,int codcentro, String nomcentro){
+        super(nombre, dni, edad);
+        this.codigocentro = codcentro;
+        this.nombrecentro = nomcentro;
+    }
     public String getNombrecentro() {
 
         return nombrecentro;
@@ -14,13 +21,7 @@ public class MiembroComunidadEscolar extends Persona{
         }else nombrecentro = "";
     }
 
-    private String nombrecentro;
-        // En herencia las propiedades de la clase padre también deben estar definidas en el constructor
-        public MiembroComunidadEscolar(String nombre, String dni, int edad,int codcentro, String nomcentro){
-            super(nombre, dni, edad);
-               this.codigocentro = codcentro;
-               this.nombrecentro = nomcentro;
-        }
+
         // Forma del getter
         public int getCodigocentro(){
 

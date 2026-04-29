@@ -16,13 +16,13 @@ public class Persona {
     - Los contructores pueden tener diferentes parametros de inicio
     - Los constructores no pueden tener menos o mas propiedades de las que se han declarado
     * */
-    /*
+
     public Persona(){
-        nombre = "";
+        nombre = "persona1";
         dni = "00000000T";
         edad = 0;
     }
-*/
+
 
 
     public Persona(String nombre, String dni, int edad){

@@ -6,8 +6,9 @@ package POO;
 
         Persona p = new Persona("Pedro", "56759F", 50);
         Persona p1 = new Persona("Manuel", "44556U", 45);
+        Persona p2 = new Persona();
         System.out.println(p1.nombre);
-        System.out.println(p.nombre);
+        System.out.println(p2.nombre);
 
         MiembroComunidadEscolar m1 = new MiembroComunidadEscolar("Manuel", "44556U", 45, 3250, "Daniel Castelao");
         System.out.println(m1.nombre);
