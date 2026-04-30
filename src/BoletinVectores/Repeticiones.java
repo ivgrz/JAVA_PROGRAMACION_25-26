@@ -11,6 +11,7 @@ public class Repeticiones {
         int puntero = 0;
         for(int k=1; k<tabla.length; k++){
             int resultado = Arrays.binarySearch(tablaaux,0, puntero+1,tabla[k]);
+            // En BinarySearch los parametros tienen de orden Arrays.BinarySearch(lugar, inicio_busqueda, limite_busqueda, elemento_buscado)
             // Sumamos 1 a puntero xq el rango (fromindex -> toindex) no incluye el elemento de la posicion del rango final
 
             if (resultado < 0){
