@@ -24,7 +24,14 @@ public class Repeticiones {
         }
 
         int[] resultadofinal = Arrays.copyOf(tablaaux, puntero+1);
-
+        // copyOf: Crea una tabla nueva, recortando los trozos vacíos (los ceros) para que el resultado quede profesional y del tamaño exacto.
+        // Arrays.copyOf(tablaaux, puntero + 1)
+        //tablaaux: Es el original que quieres fotocopiar. Como recordarás, esta tabla es grande (tamaño 10) y tiene muchos ceros al final que no sirven para nada.
+        //puntero + 1: Es el tamaño de la fotocopia. Le dices: "Solo fotocopia desde el principio hasta aquí".
+        //¿Por qué usamos puntero + 1 en ambos?
+        //Si el puntero marca la posición 2, significa que has llenado los huecos 0, 1 y 2.
+        //¿Cuántos números hay en total? 3.
+        //Por eso ponemos puntero + 1. Le estamos diciendo a Java: "Oye, el total de números válidos que tengo es 3".
         System.out.println(Arrays.toString(resultadofinal));
     }
 }
