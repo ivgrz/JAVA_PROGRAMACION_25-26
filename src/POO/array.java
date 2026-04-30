@@ -1,5 +1,6 @@
 package POO;
 import java.util.Arrays;
+
 public class array {
     public static void main(String[] args) {
 
@@ -42,9 +43,71 @@ public class array {
         System.out.println("La cantidad de letras totales son " + numero_letras_total);
         System.out.println("El DNI menor es: " + dniMenor);
 
+
+        System.out.println("--------------- METODOS DE ARRAYS ------------------");
+
+
         int[] edad = {25,27,28,22,24,29};
         Arrays.sort(edad);
         System.out.println(Arrays.toString(edad));
+
+        System.out.println("--------------- COPIA DUPLICADOS--------------------");
+
+        int[] t = {1,2,2,2,4,4,5,7,8,9};
+        int[] temporal = new int[t.length];
+        int k = 0;
+
+
+        for (int i = 0; i < t.length; i++){
+            for (int j = i + 1; j < t.length; j++){
+                if (t[i] == t[j]){
+                    boolean enlista = false;
+                    for (int m = 0; m < k; m++){
+                        if (temporal[m] == t[i]){
+                            enlista = true;
+                            break;
+                        }
+                    }
+                    if (!enlista){
+
+                        temporal[k] = t[i]; // Escribo el número en el hueco k
+                        k++; // Muevo el "dedo" o indice al siguiente hueco
+
+                    }
+                    break;
+                }
+
+            }
+
+
+        }
+        int [] t2 = Arrays.copyOf(temporal,k);
+
+        System.out.println("Original: " + Arrays.toString(t));
+        System.out.println("Repetidos: " + Arrays.toString(t2));
+
+        System.out.println("------------------- SEGUNDO EJEMPLO (BinarySearch)--------------");
+
+        int[] tp = {1,2,4,3,6,7,8,6,4,2};
+        int[] copia = Arrays.copyOf(tp, tp.length);
+        Arrays.sort(copia);
+
+        int[] temp = new int[tp.length];
+        int s = 0;
+
+
+        for (int i = 0; i < copia.length - 1; i++){
+            if (copia[i] == copia[i+1]){
+                if (k == 0 || Arrays.binarySearch(temp, 0,k, copia[i]) < 0 ){
+                    temp[k] = copia[i];
+                    k++;
+                }
+            }
+
+        }
+
+
+
 
     }
 }
