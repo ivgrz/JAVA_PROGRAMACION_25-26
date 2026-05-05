@@ -13,11 +13,11 @@ public class array {
 
         Persona[] equipo;
         equipo = new Persona[5];
-        equipo[0] = new Persona("Pablo", "Y243525", 45);
-        equipo[1] = new Persona("Jose", "A65249", 20);
-        equipo[2] = new Persona("Carmen", "B75767", 30);
-        equipo[3] = new Persona("Tina", "D12345", 17);
-        equipo[4] = new Persona("Pili", "F35212", 22);
+        equipo[0] = new Persona("Pablo", "Y243525", 45,1.80);
+        equipo[1] = new Persona("Jose", "A65249", 20,1.70);
+        equipo[2] = new Persona("Carmen", "B75767", 30,1.73);
+        equipo[3] = new Persona("Tina", "D12345", 17,1.82);
+        equipo[4] = new Persona("Pili", "F35212", 22,1.81);
         // Calcular la media de la edad
         // Calcular numero de letras total de nombres
         // Encontrar el dni lexicograficamente menor

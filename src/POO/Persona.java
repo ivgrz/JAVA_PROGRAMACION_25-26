@@ -10,6 +10,7 @@ public class Persona {
     public String nombre;
     public String dni;
     public int edad;
+    public double estatura;
     /*
     Declaracion de constructores
     - Se puede tener más de 1 constructor
@@ -17,15 +18,8 @@ public class Persona {
     - Los constructores no pueden tener menos o mas propiedades de las que se han declarado
     * */
 
-    public Persona(){
-        nombre = "persona1";
-        dni = "00000000T";
-        edad = 0;
-    }
 
-
-
-    public Persona(String nombre, String dni, int edad){
+    public Persona(String nombre, String dni, int edad, double estatura){
         // En JAVA no se necesita "this" necesariamente
         // Hacerlo asi también funciona -->
         /*
@@ -39,11 +33,21 @@ public class Persona {
         this.nombre = nombre;
         this.dni = dni;
         this.edad = edad;
+        this.estatura = estatura;
 
 
 
 
     }
+
+    public Persona(){
+        nombre = "persona1";
+        dni = "00000000T";
+        edad = 0;
+    }
+
+
+
     /*
     * Encapsulamiento
     * Declaracion de getters y setters
@@ -51,6 +55,15 @@ public class Persona {
 
     public void setNombre(String Nombre){
         this.nombre = Nombre;
+    }
+
+    public void mostrardatos(){
+        System.out.println("Nombre: " + nombre);
+        System.out.println("DNI: " + dni);
+        System.out.println("Edad: " + edad);
+        System.out.println("Estatura: " + estatura);
+
+
     }
 }
 

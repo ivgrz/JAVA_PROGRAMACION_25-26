@@ -5,8 +5,8 @@ public class MiembroComunidadEscolar extends Persona{
     private String nombrecentro;
 
     // En herencia las propiedades de la clase padre también deben estar definidas en el constructor
-    public MiembroComunidadEscolar(String nombre, String dni, int edad,int codcentro, String nomcentro){
-        super(nombre, dni, edad);
+    public MiembroComunidadEscolar(String nombre, String dni, int edad,int codcentro, double estatura, String nomcentro){
+        super(nombre, dni, edad, estatura);
         this.codigocentro = codcentro;
         this.nombrecentro = nomcentro;
     }
