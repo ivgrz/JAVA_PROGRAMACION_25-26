@@ -57,6 +57,13 @@ public class Persona {
         this.nombre = Nombre;
     }
 
+    @Override
+    public boolean equals(Object otra){
+        Persona otrapersona = (Persona) otra;
+        if (this.estatura == otrapersona.estatura) return true;
+        else return false;
+    }
+
     public void mostrardatos(){
         System.out.println("Nombre: " + nombre);
         System.out.println("DNI: " + dni);
