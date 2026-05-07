@@ -1,4 +1,4 @@
-package POO;
+package POO.Ejemplos_Basicos;
 /*
 Las clases pueden ser "public" "private" y "protected" (sin especificar, ej. "class Persona")
 Si se declara "private" no se puede usar desde fuera

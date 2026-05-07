@@ -1,4 +1,4 @@
-package POO;
+package POO.Ejemplos_Basicos;
 
 public class Trabajador extends Persona{
     public double salario;

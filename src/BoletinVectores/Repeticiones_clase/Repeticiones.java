@@ -1,4 +1,4 @@
-package BoletinVectores;
+package BoletinVectores.Repeticiones_clase;
 
 import java.util.Arrays;
 

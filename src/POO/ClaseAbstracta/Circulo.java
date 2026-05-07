@@ -3,6 +3,7 @@ package POO.ClaseAbstracta;
 Clase que implementa la clase abstracta Punto
 Para que no falle implementar un metodo abstracto de la clase padre
 O convertir esta clase en abstracta (pero no te deja instanciar objetos)
+Clase Abstracta: Es el "Padre" que da la herencia (atributos y estructura).
  */
 public class Circulo extends Punto{
 

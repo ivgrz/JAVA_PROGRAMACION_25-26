@@ -1,7 +1,5 @@
 package JavaBasico;
 
-import POO.Persona;
-
 import java.util.Scanner;
 
 public class buclesjava {

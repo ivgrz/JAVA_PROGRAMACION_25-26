@@ -1,4 +1,4 @@
-package POO;
+package POO.Ejemplos_Basicos;
 
 public class MiembroComunidadEscolar extends Persona{
     private int codigocentro;

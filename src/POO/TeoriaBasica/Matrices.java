@@ -1,4 +1,4 @@
-package POO;
+package POO.TeoriaBasica;
 
 public class Matrices {
 

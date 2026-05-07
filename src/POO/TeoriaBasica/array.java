@@ -1,4 +1,6 @@
-package POO;
+package POO.TeoriaBasica;
+import POO.Ejemplos_Basicos.Persona;
+
 import java.util.Arrays;
 
 public class array {
