@@ -3,7 +3,7 @@ package POO.Ejemplos_Basicos;
 Las clases pueden ser "public" "private" y "protected" (sin especificar, ej. "class Persona")
 Si se declara "private" no se puede usar desde fuera
 */
-public class Persona {
+public  class Persona implements Comparable<Persona>{
     /*
     Declaracion de propiedades
      */
@@ -71,6 +71,11 @@ public class Persona {
         System.out.println("Estatura: " + estatura);
 
 
+    }
+
+    @Override
+    public int compareTo(Persona o) {
+        return 0;
     }
 }
 

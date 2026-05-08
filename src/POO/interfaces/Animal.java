@@ -18,7 +18,7 @@ interface viviparo{
 }
 
 
-public class Animal {
+public class Animal implements Comparable<Animal> {
     int numpatas;
     String tespecie;
     String tnombre;
@@ -35,6 +35,14 @@ public class Animal {
 
     public String toString(){
         return "Especie: " + this.tespecie + "\n" + "Nombre: " + this.tnombre + "\n" + "Cantidad de patas: " + numpatas;
+    }
+
+    @Override
+    public int compareTo(Animal otro) {
+        if (this.numpatas < otro.numpatas) return -1;
+        else if (this.numpatas > otro.numpatas) return 1;
+        else return 0;
+
     }
 }
 
