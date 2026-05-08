@@ -105,8 +105,8 @@ public  class PersonaComparable implements Comparable<PersonaComparable>{
         ComparadorEdadesPersona comparadoredad = new ComparadorEdadesPersona();
         System.out.println(comparadoredad.compare(p1,p3));
         PersonaComparable [] individuos = new PersonaComparable[3];
-        individuos[0] = p1;
-        individuos[1] = p2;
+        individuos[0] = p;
+        individuos[1] = p1;
         individuos[2] = p3;
         System.out.println(Arrays.toString(individuos));
         Arrays.sort(individuos);
