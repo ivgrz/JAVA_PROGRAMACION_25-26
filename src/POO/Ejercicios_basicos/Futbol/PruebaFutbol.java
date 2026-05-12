@@ -31,10 +31,24 @@ public class PruebaFutbol {
         System.out.println("\n--- ORDENADO POR NOMBRE (Comparator) ---");
         imprimirEquipo(equipo);
 
+        System.out.println();
+
+        // Metodo EQUALS
+
+        System.out.println("------- EQUALS --------");
+        Futbolista clonMessi = new Futbolista("L. Messi","123A", 36, 1.70, 800);
+
+        Futbolista MessiLista = equipo.get(2);
+
+        if (MessiLista.equals(clonMessi)) System.out.println("Coincide DNI");
+        else System.out.println("Futbolistas diferentes (no coincide DNI)");
+
+        System.out.println("Comprobacion de sitio en memoria: " + (MessiLista == clonMessi));
     }
     public static void imprimirEquipo(List<Futbolista> lista) {
         for (Futbolista f : lista) {
             System.out.println("Nombre: " + f.nombre + " | Goles: " + f.getNumero_goles() + " | DNI: " + f.dni);
         }
     }
+
 }
