@@ -1,6 +1,8 @@
-package POO.Ejemplos_Basicos;
+package POO.Ejercicios_basicos.Trabajo;
 
-public class MiembroComunidadEscolar extends Persona{
+import POO.Ejercicios_basicos.Persona;
+
+public class MiembroComunidadEscolar extends Persona {
     private int codigocentro;
     private String nombrecentro;
 

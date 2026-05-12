@@ -1,6 +1,8 @@
-package POO.Ejemplos_Basicos;
+package POO.Ejercicios_basicos.Trabajo;
 
- class Main {
+import POO.Ejercicios_basicos.Persona;
+
+class Main {
     public static void main(String[] args) {
 
 

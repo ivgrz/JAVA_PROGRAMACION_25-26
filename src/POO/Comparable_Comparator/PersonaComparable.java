@@ -1,7 +1,5 @@
 package POO.Comparable_Comparator;
 
-import POO.Ejemplos_Basicos.Persona;
-
 import java.util.Arrays;
 
 /*

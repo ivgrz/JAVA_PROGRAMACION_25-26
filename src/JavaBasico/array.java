@@ -1,5 +1,5 @@
-package POO.TeoriaBasica;
-import POO.Ejemplos_Basicos.Persona;
+package JavaBasico;
+import POO.Ejercicios_basicos.Persona;
 
 import java.util.Arrays;
 

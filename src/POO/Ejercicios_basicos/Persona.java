@@ -1,9 +1,9 @@
-package POO.Ejemplos_Basicos;
+package POO.Ejercicios_basicos;
 /*
 Las clases pueden ser "public" "private" y "protected" (sin especificar, ej. "class Persona")
 Si se declara "private" no se puede usar desde fuera
 */
-public  class Persona implements Comparable<Persona>{
+public class Persona implements Comparable<Persona>{
     /*
     Declaracion de propiedades
      */
@@ -75,7 +75,9 @@ public  class Persona implements Comparable<Persona>{
 
     @Override
     public int compareTo(Persona o) {
-        return 0;
+        return this.dni.compareTo(o.dni);
     }
+
+
 }
 

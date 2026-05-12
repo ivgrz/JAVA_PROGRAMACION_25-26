@@ -1,6 +1,8 @@
-package POO.Ejemplos_Basicos;
+package POO.Ejercicios_basicos.Trabajo;
 
-public class Trabajador extends Persona{
+import POO.Ejercicios_basicos.Persona;
+
+public class Trabajador extends Persona {
     public double salario;
     public String talla;
 

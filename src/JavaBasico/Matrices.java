@@ -1,4 +1,4 @@
-package POO.TeoriaBasica;
+package JavaBasico;
 
 public class Matrices {
 
