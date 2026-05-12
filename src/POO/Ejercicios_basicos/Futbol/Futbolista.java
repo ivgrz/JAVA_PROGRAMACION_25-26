@@ -18,13 +18,6 @@ public class Futbolista extends Persona{
     }
 
 
-    @Override
-    public boolean equals(Object otra) {
-        if (this == otra) return true;
-        if(!(otra instanceof Futbolista otrapersona)) return false;
-        return this.dni != null && this.dni.equals(otrapersona.dni);
-    }
-
     public static Comparator<Futbolista> GolesComparator = new Comparator<Futbolista>() {
         @Override
         public int compare(Futbolista f1, Futbolista f2) {
@@ -44,5 +37,8 @@ public class Futbolista extends Persona{
     }
     public void setNumero_goles(int numero_goles) {
         this.numero_goles = numero_goles;
+    }
+    public String toString(){
+        return super.toString()+ ", " + numero_goles;
     }
 }

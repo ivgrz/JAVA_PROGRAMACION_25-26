@@ -1,4 +1,7 @@
 package POO.Ejercicios_basicos;
+
+import POO.Comparable_Comparator.PersonaComparable;
+
 /*
 Las clases pueden ser "public" "private" y "protected" (sin especificar, ej. "class Persona")
 Si se declara "private" no se puede usar desde fuera
@@ -60,7 +63,7 @@ public class Persona implements Comparable<Persona>{
     @Override
     public boolean equals(Object otra){
         Persona otrapersona = (Persona) otra;
-        if (this.estatura == otrapersona.estatura) return true;
+        if (this.dni.equals(otrapersona.dni)) return true;
         else return false;
     }
 
