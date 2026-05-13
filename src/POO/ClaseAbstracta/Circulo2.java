@@ -27,7 +27,7 @@ public class Circulo2 extends Punto2 implements Perimetro, Area{
 
     @Override
     public double calcularArea() {
-        return Math.PI * Math.pow(radio,2);
+        return PI * Math.pow(radio,2);
     }
 
 
