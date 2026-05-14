@@ -1,12 +1,14 @@
 package POO.Comparable_Comparator;
 
+import POO.Ejercicios_basicos.Persona;
+
 import java.util.Arrays;
 
 /*
 Las clases pueden ser "public" "private" y "protected" (sin especificar, ej. "class Persona")
 Si se declara "private" no se puede usar desde fuera
 */
-public  class PersonaComparable implements Comparable<PersonaComparable>{
+public class Persona2 implements Comparable<Persona2>{
     /*
     Declaracion de propiedades
      */
@@ -22,7 +24,7 @@ public  class PersonaComparable implements Comparable<PersonaComparable>{
     * */
 
 
-    public PersonaComparable(String nombre, String dni, int edad, double estatura){
+    public Persona2(String nombre, String dni, int edad, double estatura){
         // En JAVA no se necesita "this" necesariamente
         // Hacerlo asi también funciona -->
         /*
@@ -43,7 +45,7 @@ public  class PersonaComparable implements Comparable<PersonaComparable>{
 
     }
 
-    public PersonaComparable(){
+    public Persona2(){
         nombre = "Alberto";
         dni = "00000000T";
         edad = 60;
@@ -62,7 +64,7 @@ public  class PersonaComparable implements Comparable<PersonaComparable>{
 
     @Override
     public boolean equals(Object otra){
-        PersonaComparable otrapersona = (PersonaComparable) otra;
+        Persona2 otrapersona = (Persona2) otra;
         if (this.estatura == otrapersona.estatura) return true;
         else return false;
     }
@@ -75,12 +77,15 @@ public  class PersonaComparable implements Comparable<PersonaComparable>{
 
 
     }
+
+
+
     public String toString(){
         return "Nombre: " + this.nombre + "\t" + "DNI: " + this.dni + "\t" + "Edad: " + this.edad + "\t" + "Estatura: " + this.estatura ;
     }
 
     @Override
-    public int compareTo(PersonaComparable otra) {
+    public int compareTo(Persona2 otra) {
         /*int resultadoCom = this.dni.compareTo(otra.dni);
         System.out.println(resultadoCom);
         if (resultadoCom > 0) return 1;// si lo comparado es "mayor" que el que tenemos debe devolver algo > 0
@@ -93,16 +98,16 @@ public  class PersonaComparable implements Comparable<PersonaComparable>{
 
     public static void main(String[] args) {
 
-        PersonaComparable p = new PersonaComparable("Pedro", "56759F", 50, 1.80);
-        PersonaComparable p1 = new PersonaComparable("Manuel", "4455U", 45, 1.76);
-        PersonaComparable p2 = new PersonaComparable();
+        Persona2 p = new Persona2("Pedro", "56759F", 50, 1.80);
+        Persona2 p1 = new Persona2("Manuel", "4455U", 45, 1.76);
+        Persona2 p2 = new Persona2();
         System.out.println(p1.nombre);
         System.out.println(p2.nombre);
-        PersonaComparable p3 = new PersonaComparable("Pepe", "4567H",35,1.70);
+        Persona2 p3 = new Persona2("Pepe", "4567H",35,1.70);
         System.out.println(p1.compareTo(p3));
         ComparadorEdadesPersona comparadoredad = new ComparadorEdadesPersona();
         System.out.println(comparadoredad.compare(p1,p3));
-        PersonaComparable [] individuos = new PersonaComparable[3];
+        Persona2[] individuos = new Persona2[3];
         individuos[0] = p;
         individuos[1] = p1;
         individuos[2] = p3;

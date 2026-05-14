@@ -58,7 +58,7 @@ public class buclesjava {
             for (int i = 5; i < 10; i += 3) {
                 System.out.println("Indice: " + i);
             }
-            // otra manera
+            // for each
             int[] numeros = new int[0];
             for (int n: numeros){
                 System.out.println("El numero es" + numeros[n]);

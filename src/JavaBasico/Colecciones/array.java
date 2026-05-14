@@ -1,4 +1,4 @@
-package JavaBasico;
+package JavaBasico.Colecciones;
 import POO.Ejercicios_basicos.Persona;
 
 import java.util.Arrays;

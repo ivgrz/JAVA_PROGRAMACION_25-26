@@ -1,6 +1,6 @@
 package POO.Ejercicios_basicos;
 
-import POO.Comparable_Comparator.PersonaComparable;
+import POO.Comparable_Comparator.Persona2;
 
 /*
 Las clases pueden ser "public" "private" y "protected" (sin especificar, ej. "class Persona")
