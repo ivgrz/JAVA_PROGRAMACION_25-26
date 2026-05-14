@@ -5,6 +5,8 @@ import POO.Ejercicios_basicos.Persona;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.Iterator;
+import java.util.ListIterator;
 
 public class Futbolista extends Persona2 {
 
@@ -51,13 +53,37 @@ public class Futbolista extends Persona2 {
 
         ArrayList equipo2 = new ArrayList();
         equipo2.add(equipo[1]);
+        equipo2.add(equipo[2]);
+        equipo2.add(equipo[3]);
+        equipo2.add(equipo[4]);
         equipo2.add("Celta");
 
         for (Futbolista f : equipo){
             System.out.println("Futbolista: " + f);
         }
-        for (int i = 0; i < equipo.length; i++){
-            System.out.println("Futbolista: " + equipo[i]);
+        for (int i = 0; i < equipo2.size(); i++){
+            System.out.println("Futbolista: " + equipo2.get(i));
+        }
+
+        for (Persona2 f: equipo){
+            System.out.println("Futbolista: " + f);
+        }
+
+
+        Iterator<Futbolista> iterador = equipo2.iterator();
+        while (iterador.hasNext()){
+            System.out.println("Futbolista: " + iterador.next());
+        }
+
+
+        ListIterator<Futbolista> lit = equipo2.listIterator();
+        System.out.println("Recorriendo lista con ListIterator");
+        while (lit.hasNext()){
+            System.out.println("F: " + lit.next());
+        }
+        System.out.println("Recorriendo hacia atras");
+        while (lit.hasPrevious()){
+            System.out.println(" : " + lit.previous());
         }
 
 
